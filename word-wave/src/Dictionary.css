@@ -1,0 +1,267 @@
+/* General container styling */
+.word-wave-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* Light Theme */
+.word-wave-container.light {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Dark Theme */
+.word-wave-container.dark {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+/* Container for the dictionary content */
+.dictionary-container {
+    max-width: 600px;
+    width: 100%; /* Make it full width on small screens */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dictionary-container.dark {
+    background-color: #444;
+    border: 1px solid #555;
+}
+
+/* Search Form Styling */
+.search-form {
+    display: flex; /* Use flex to align items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Add margin below the search form for spacing */
+    padding: 10px; /* Add some padding */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Light Theme Search Form */
+.word-wave-container.light .search-form {
+    background-color: #ffffff; /* Light background */
+    border: 1px solid #ccc; /* Light border */
+}
+
+/* Dark Theme Search Form */
+.word-wave-container.dark .search-form {
+    background-color: #444; /* Dark gray background */
+    border: 1px solid #555; /* Darker border */
+}
+
+.search-form label {
+    display: block; /* Ensure the label takes up its own line */
+    margin-right: 15px;
+}
+
+/* Input and Button Styling */
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: calc(100% - 130px); /* Adjusting width to fit in the container with button */
+}
+
+/* Light Theme Input */
+.word-wave-container.light .search-input {
+    background-color: #fff; /* Light background */
+    color: #000; /* Dark text */
+    border: 1px solid #ccc; /* Light border */
+}
+
+/* Dark Theme Input */
+.word-wave-container.dark .search-input {
+    background-color: #555; /* Dark background */
+    color: #fff; /* Light text */
+    border: 1px solid #777; /* Darker border */
+}
+
+/* Button styling */
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #60cef6;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Light Theme Button */
+.word-wave-container.light .search-button {
+    background-color: #60cef6; /* Light background */
+    color: #fff; /* Light text */
+}
+
+/* Dark Theme Button */
+.word-wave-container.dark .search-button {
+    background-color: #0056b3; /* Darker blue */
+    color: #fff; /* Light text */
+}
+
+.search-button:hover {
+    background-color: #003f8a; /* Darker blue on hover */
+}
+
+/* Save to favorites button */
+.save-favorite-button {
+    margin-top: 10px;
+    padding: 10px 15px; /* Increased padding for a better appearance */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Light Theme Save Button */
+.word-wave-container.light .save-favorite-button {
+    background-color: #4CAF50; /* Light green */
+}
+
+/* Dark Theme Save Button */
+.word-wave-container.dark .save-favorite-button {
+    background-color: #388e3c; /* Darker green */
+}
+
+.save-favorite-button:hover {
+    background-color: #2d7030; /* Darker green on hover */
+}
+
+/* Favorites List Styling */
+.favorites-container {
+    margin-top: 20px; /* Add margin above the favorites list */
+}
+
+.favorites-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.favorite-item {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between the word and button */
+    align-items: center; /* Center items vertically */
+    padding: 8px; /* Padding for each item */
+    border-bottom: 1px solid #ccc; /* Separator for list items */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.favorite-item:hover {
+    background-color: #f0f0f0; /* Highlight on hover for better interaction */
+}
+
+/* Remove favorite button styling */
+.remove-favorite-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default border */
+    color: #e74c3c; /* Red color for remove */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+}
+
+/* Theme toggle button */
+.theme-toggle-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #60cef6;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme Toggle Button */
+.word-wave-container.light .theme-toggle-button {
+    background-color: #60cef6; /* Light background */
+    color: #fff; /* Light text */
+}
+
+/* Dark Theme Toggle Button */
+.word-wave-container.dark .theme-toggle-button {
+    background-color: #444; /* Dark gray background */
+    color: #fff; /* Light text */
+}
+
+.theme-toggle-button:hover {
+    background-color: #003f8a; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dictionary-container {
+        padding: 15px;
+        width: 100%; /* Full width on small screens */
+    }
+
+    .search-input {
+        width: calc(100% - 20px); /* Full width with margin */
+        margin-bottom: 10px; /* Space between input and button */
+    }
+
+    .search-button {
+        width: 100%; /* Full width button */
+        margin-left: 0; /* No margin */
+    }
+
+    .save-favorite-button {
+        width: 100%; /* Full width button */
+    }
+
+    .favorites-list {
+        padding-left: 0; /* Remove default padding for the list */
+    }
+
+    .favorites-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0; /* Space between list items */
+    }
+}
+
+/* Additional media queries for very small screens */
+@media (max-width: 480px) {
+    .theme-toggle-button {
+        width: 100%; /* Full width on very small screens */
+        margin-bottom: 15px; /* Add spacing */
+    }
+}
+
+/* Dark Mode Text Color for Search Results */
+.word-wave-container.dark .search-results {
+    color: #000; /* Ensure text color is black in dark mode */
+}
+
+/* Adjust text color for other related containers if necessary */
+.word-wave-container.dark .definition-container  {
+    color: #000; /* Also ensure this remains black */
+}
+
+/* If you have a specific class for individual results */
+.word-wave-container.dark .favorite-item {
+    color: #000; /* Ensure favorites list text is also black */
+}
+
+.favorites-container h3 {
+    color: black;
+}
